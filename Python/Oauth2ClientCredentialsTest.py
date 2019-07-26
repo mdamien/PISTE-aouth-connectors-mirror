@@ -25,18 +25,3 @@ token = res.json()
 client = OAuth2Session(client_id, token=token)
 
 # import log_all_http
-
-# 2. try a random request
-payload = {
-  "id": "KALIARTI000026231889"
-}
-res = client.post(
-  "%s/dila/legifrance/lf-engine-app/consult/kaliArticle" % API_HOST,
-  headers={
-    "Accept": "application/json",  # might be redundant
-    # "Content-Type": "application/json"
-  },
-  json=payload
-)
-print(f"status is {res.status_code}")
-print("res is %s" % res.json())
