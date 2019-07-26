@@ -1,0 +1,2 @@
+Pour faire fonctionner ce projet, il sera nécessaire d'ajouter dans votre magasin de certificat le certificat root du serveur d'authentification.
+Les librairies nécessaires sont fournies dans le package.
